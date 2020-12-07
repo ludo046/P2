@@ -1,0 +1,476 @@
+/* GENERAL */
+
+a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+header
+{
+    width: 96%;
+    margin: auto;
+}
+
+h2
+{
+    font-family: raleway,serif,sans-serif;
+}
+
+.gris
+{
+    color: #F2F2F2;
+}
+
+.marge-total
+{
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+/* HEADER */
+
+.blue
+{
+    color: #0065FC;
+}
+
+#logo
+{
+    height: 50px;
+    margin-top: 20px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+}
+
+li
+{
+    margin: 25px;
+    font-family: raleway, serif, sans-serif;
+}
+
+.marge-slogan
+{
+    margin: 10px 20px
+}
+
+#top
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#reservia
+{
+    width: 100px;
+}
+
+#slogan
+{
+    font-family: raleway, serif, sans-serif;
+    margin-bottom: 20px
+}
+
+#slogan h3
+{
+    font-weight: 700;
+    font-size: 20px
+}
+
+.bleu:hover
+{
+    border-top: 2px solid blue;
+}
+
+.gris:hover
+{
+    border-top: 2px solid grey;
+}
+
+/* SEARCH BAR */
+.map-point
+{
+    width: 15px;
+    padding: 0 15px 0 15px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    margin-left: 20px;
+}
+
+::placeholder
+{
+    color: black;
+    padding-left: 20px;
+}
+
+.search 
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    font-family: raleway, serif, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.searchTerm 
+{
+    width: 100%;
+    border: 3px solid #F2F2F2;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton 
+{
+    width: 250px;
+    height: 36px;
+    border: 1px solid #F2F2F2;
+    background: #0065FC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 1.1em;
+    height: 50px;
+}
+
+.wrap
+{
+    width: 30%;
+    display: flex;
+}
+
+
+
+/* FILTRE */
+
+.filtre
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#filtre
+{
+    margin: 50px 20px
+}
+
+.icon
+{
+    border: 2px solid  #DEEBFF;
+    border-radius: 100%;
+    padding: 15px;
+    margin-right: 10px;
+    background-color: #DEEBFF;
+}
+
+.info
+{
+    padding: 1px 8px;
+    margin-right: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.list
+{
+    border-top: 3px solid #F2F2F2;
+    border-right: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    padding: 15px 20px 15px 0;
+    border-radius: 50px;
+    margin: 0px;
+}
+
+.p1
+{
+    font-family: raleway, sans-serif, serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.tri
+{
+    display: flex;
+    font-family: raleway, serif, sans-serif;
+    height: 90px;
+    font-weight: bold;
+    color: black,
+}
+
+/* HEBERGEMENT */
+
+.hotel
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.hebergement
+{
+    width: 64%;
+    background-color: #f2F2f2;
+    border-radius: 20px;
+    height: 600px;
+    font-family: raleway, serif, sans-serif;
+}
+
+.populaire
+{
+    width: 31%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: 600px;
+    font-family: raleway, serif, sans-serif;
+}
+
+h2
+{
+    margin-left: 40px;
+}
+
+.graph
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#graph
+{
+    margin-top: 20px;
+}
+
+.photo
+{
+    display: flex;
+    width: 240px;
+    height: 115px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 20px 20px 0 0;
+}
+
+.cadre
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.overlay
+{
+    display: flex;
+    width: 245px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 0 0 20px 20px;
+    height: 70px;
+}
+
+.overlay, h4, p
+{
+    margin: 2px 0 0 10px;
+    padding-left: 5px;
+}
+
+.photo, .overlay
+{
+    margin: 0;
+    
+}
+
+.marge
+{
+    margin-bottom: 30px;
+}
+
+
+.photo-pop
+{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+}
+
+.overlay-pop
+{
+    display: flex;
+    width: 215px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 0 20px 20px 0;
+}
+
+.marge-pop
+{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.afficher
+{
+    margin: 20px 0 0 40px;
+}
+
+.margin-pop
+{
+    margin-bottom: 50px;
+}
+
+.star
+{
+    margin-left: 15px;
+}
+
+/* ACTIVITES */
+
+.gauche
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.grande
+{
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+    height: 390px;
+    object-fit: cover;
+    display: flex
+}
+
+.petite
+{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.petite-droite
+{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.iles
+{
+    width: 300px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.droite
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-around
+}
+
+.toutes
+{
+    display: flex;
+    height: 440px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.overlay-act
+{
+    display: flex;
+    width: 300px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    height: 50px;
+    box-shadow: 0 5px 5px 5px #F2F2F2;
+    font-family: raleway, serif, sans-serif;
+}
+
+.marge-act
+{
+    margin: 15px 0 0 5px
+}
+
+.deux
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+/* FOOTER */
+
+.a-propos
+{
+margin-right: 220px
+}
+
+.nos-hebergement
+{
+    margin-right: 220px
+}
+
+.assistance
+{
+    
+}
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    height: 150px;
+    font-family: raleway, serif, sans-serif;
+    margin: 50px 0 0 0;
+}
+
+.direction
+{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.marge-footer
+{
+    margin: 20px;
+}
+
+.z
+{
+    margin: 10px 0 0 25px; 
+}
+
+.overflow
+{
+    overflow: hidden
+}
