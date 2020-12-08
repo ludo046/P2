@@ -308,7 +308,7 @@ li
 
 h2
 {
-    margin-left: 40px;
+    margin: 50px 0 20px 50px;
 }
 
 .graph
@@ -319,7 +319,7 @@ h2
 
 #graph
 {
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .photo
@@ -333,6 +333,15 @@ h2
 }
 
 .cadre
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    width: auto
+}
+
+.cadre-pop
 {
     display: flex;
     justify-content: space-around;
@@ -376,7 +385,7 @@ h2
 
 .photo-pop
 {
-    width: 110px;
+    width: 30%;
     height: 130px;
     object-fit: cover;
     border: 5px solid white;
@@ -387,7 +396,7 @@ h2
 .overlay-pop
 {
     display: flex;
-    width: 215px;
+    width: 40%px;
     background-color: white;
     flex-direction: column;
     border-radius: 0 20px 20px 0;
