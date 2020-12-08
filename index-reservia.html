@@ -15,9 +15,9 @@
             </div>
             <div id="menu">
                 <ul class="header">
-                    <a href="#"><li class="bleu">Hébergements</li></a>
-                    <a href="#"><li class="gris">Activités</li></a>
-                    <a href="#"><li class="bleu"><bold>S'inscrire</bold></li></a>
+                    <a href="#hotel"><li class="bleu">Hébergements</li></a>
+                    <a href="#activité"><li class="black">Activités</li></a>
+                    <a href="#"><li class="bleu"><strong>S'inscrire</strong></li></a>
                 </ul>
             </div>
         </section>
@@ -28,7 +28,7 @@
             </div>
         </header>
         <section class="marge-total">
-        <section>
+        <section class="searchbar">
             <div class="wrap">
                 <div class="search">
                     <img src="icones/map-marker-alt-solid.svg" class="map-point">
@@ -41,7 +41,7 @@
             <div class="tri">
                 <h3 id="filtre">Filtres</h3>
                 <ul class="filtre">
-                    <li><a href="#"><p class="list"><span class="icon"><i class="fas fa-money-bill-wave blue fa-lg"></i></span>Economique</p></a></li>
+                    <li><a href="#"><p class="list"><span class="icon"><i class="fas fa-money-bill-wave blue"></i></span>Economique</p></a></li>
                     <li><a href="#"><p class="list"><span class="icon"><i id="child"class="fas fa-child blue fa-lg"></i></span>Familial</p></a></li>
                     <li><a href="#"><p class="list"><span class="icon"><i class="fas fa-heart blue fa-lg"></i></span>Romantique</p></a></li>
                     <li><a href="#"><p class="list"><span class="icon"><i class="fas fa-dog blue fa-lg"></i></span>Animaux autorisés</p></a></li>
@@ -52,7 +52,7 @@
             </div>
         </section>
         
-        <section class="hotel">
+        <section id="hotel">
             <div class="hebergement">
                 <h2>Hebergement à marseille</h2>
                 <div class="cadre">
@@ -130,14 +130,16 @@
                     </a>
                 </div>
                 <div>
-                    <h4 class="afficher">Afficher plus</h4>
+                    <a href="#">
+                        <h4 class="afficher">Afficher plus</h4>
+                    </a>
                 </div>
             </div>
 
             <div class="populaire">
                 <div class="graph">
-                    <h2>Les plus populaire</h2>
-                    <i id="graph" class="fas fa-chart-line"></i>
+                    <h2 class="marge-h2">Les plus populaire</h2>
+                    <i id="graph" class="fas fa-chart-line fa-lg"></i>
                 </div>
                 <div class="cadre">
                     <a href="#">
@@ -145,7 +147,7 @@
                             <div class="marge-pop">
                                 <img class="photo-pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin">
                                 <div class="overlay-pop">
-                                    <h4>Hôtel le soleil du matin</h4>
+                                    <h4>Hôtel le soleil du<br>matin</h4>
                                     <p class="margin-pop">Nuit à partir de 128€</p>
                                     <div class="star">
                                         <i class="fas fa-star blue fa-xs" blue></i><i class="fas fa-star fa-xs blue"></i><i class="fas fa-star fa-xs blue"></i><i class="fas fa-star fa-xs blue"></i><i class="fas fa-star fa-xs blue"></i>
@@ -155,7 +157,7 @@
                         </div>
                     </a>
                 </div>
-                                <div class="cadre">
+                <div class="cadre">
                     <a href="#">
                         <div class="horizontal">
                             <div class="marge-pop">
@@ -190,53 +192,65 @@
             </div>
         </section>
         
-        <section class="activité">
+        <section id="activité">
             <div>
                 <h2>Activités à Marseille</h2>
             </div>
             <div class="toutes">
                 <div class="gauche">
+                    <a href="#">
                     <div>
                         <img class="grande" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
                         <div class="overlay-act">
                             <h4 class="marge-act">Vieux Port</h4>
                         </div>
                     </div>
+                    </a>
                     <div class="deux">
+                        <a href="#">
                         <div overflow>
                             <img class="petite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues">
                             <div class="overlay-act">
                                 <h4 class="marge-act">Fort de Pomègues</h4>
                             </div>
                         </div>
+                        </a>
+                        <a href="#">
                         <div>
                             <img class="iles" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul">
                             <div class="overlay-act">
                                 <h4 class="marge-act">Îles du Frioul</h4>
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="droite">
+                    <a href="#">
                     <div>
                         <img class="grande" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
                         <div class="overlay-act">
                             <h4 class="marge-act">Parc National des Calanques</h4>
                         </div>
                     </div>
+                    </a>
                     <div class="deux">
+                        <a href="#">
                         <div>
                             <img class="petite-droite" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
                             <div class="overlay-act">
                                 <h4 class="marge-act">Notre-dame-de-la-Garde</h4>
                             </div>
                         </div>
+                        </a>
+                        <a href="#">
                         <div>
                             <img class="petite-droite" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamp">
                             <div class="overlay-act">
                                 <h4 class="marge-act">parc Longchamp</h4>
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
