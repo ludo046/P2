@@ -295,7 +295,7 @@ li
 
 .populaire
 {
-    width: 31%;
+
     background-color: #F2F2F2;
     border-radius: 20px;
     font-family: raleway, serif, sans-serif;
@@ -385,12 +385,11 @@ h2
     object-fit: cover;
     border: 5px solid white;
     border-radius: 20px 0 0 20px;
-    display: flex;
 }
 
 .overlay-pop
 {
-    display: flex;
+
     width: 200px;
     background-color: white;
     flex-direction: column;
