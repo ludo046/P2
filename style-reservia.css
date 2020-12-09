@@ -380,7 +380,7 @@ h2
 .photo-pop
 {
     width: 30%;
-    height: 100%;
+    height: ;
     object-fit: cover;
     border: 5px solid white;
     border-radius: 20px 0 0 20px;
@@ -433,7 +433,6 @@ h2
 .gauche
 {
     display: flex;
-    width: 50%;
     justify-content: space-around;
 
 }
@@ -444,7 +443,7 @@ h2
     border-radius: 20px 20px 0 0;
     height: 390px;
     object-fit: cover;
-    display: flex;
+    margin-right: 40px
 }
 
 .petite
@@ -475,16 +474,15 @@ h2
 .droite
 {
     display: flex;
-    width: 50%;
     justify-content: space-around;
 }
 
 .toutes
 {
     display: flex;
-    height: 440px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin: 30px 0px 0 0px;
+    justify-content: space-around;
 }
 
 .overlay-act
