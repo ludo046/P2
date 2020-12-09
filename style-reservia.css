@@ -3,6 +3,7 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a
@@ -17,20 +18,17 @@ a
     color: black;
 }
 
-body, html 
+body 
 {
     height: 100%;
-    display: flex;
-    flex-direction: column
+    margin: 0;
+    padding: 0;
 }
 
 footer
 {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    padding-top:50px;
-    height:50px;
+    margin: 0;
+    padding:0;
 }
 
 
@@ -54,10 +52,6 @@ h2
 
 main
 {
-    max-width:1280px;
-    min-height:100%;
-    margin:0 auto;
-    position:relative;
 }
 
 .marge-total
@@ -344,8 +338,8 @@ h2
 .cadre-pop
 {
     display: flex;
-    justify-content: space-around;
-    margin: 0 20px;
+    justify-content: center;
+    margin: 0 40px;
     flex-wrap: wrap;
 }
 
@@ -396,7 +390,7 @@ h2
 .overlay-pop
 {
     display: flex;
-    width: 40%px;
+    width: 60%;
     background-color: white;
     flex-direction: column;
     border-radius: 0 20px 20px 0;
@@ -441,7 +435,7 @@ h2
     display: flex;
     width: 50%;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wra;
 }
 
 .grande
@@ -483,7 +477,7 @@ h2
     display: flex;
     width: 50%;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wra;
 }
 
 .toutes
@@ -531,7 +525,7 @@ h2
 .assistance
 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .nos-hebergement
@@ -546,7 +540,6 @@ h2
     display: flex;
     background-color: #F2F2F2;
     font-family: raleway, serif, sans-serif;
-    margin-top: 50px;
     width: 100%;
 }
 
