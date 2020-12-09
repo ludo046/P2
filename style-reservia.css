@@ -319,7 +319,7 @@ h2
 .photo
 {
     display: flex;
-    width: 240px;
+    width: 250px;
     height: 115px;
     object-fit: cover;
     border: 5px solid white;
@@ -346,7 +346,7 @@ h2
 .overlay
 {
     display: flex;
-    width: 245px;
+    width: 250px;
     background-color: white;
     flex-direction: column;
     border-radius: 0 0 20px 20px;
@@ -390,7 +390,7 @@ h2
 .overlay-pop
 {
     display: flex;
-    width: 60%;
+    width: 70%;
     background-color: white;
     flex-direction: column;
     border-radius: 0 20px 20px 0;
@@ -435,7 +435,7 @@ h2
     display: flex;
     width: 50%;
     justify-content: space-around;
-    flex-wrap: wra;
+    flex-wrap: wrap;
 }
 
 .grande
@@ -477,7 +477,7 @@ h2
     display: flex;
     width: 50%;
     justify-content: space-around;
-    flex-wrap: wra;
+    flex-wrap: wrap;
 }
 
 .toutes
@@ -541,6 +541,7 @@ h2
     background-color: #F2F2F2;
     font-family: raleway, serif, sans-serif;
     width: 100%;
+    padding: 50px 0;
 }
 
 .direction
