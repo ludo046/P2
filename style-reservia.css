@@ -278,16 +278,18 @@ li
 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .hebergement
 {
-    width: 64%;
+    width: 850px;
     background-color: #f2F2f2;
     border-radius: 20px;
-    height: 100%;
+    flex-wrap: wrap;
     font-family: raleway, serif, sans-serif;
     padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -378,8 +380,8 @@ h2
 
 .photo-pop
 {
-    width: 30%;
-    height: ;
+    width: 120px;
+    max-height: 140px;
     object-fit: cover;
     border: 5px solid white;
     border-radius: 20px 0 0 20px;
@@ -389,7 +391,7 @@ h2
 .overlay-pop
 {
     display: flex;
-    width: 70%;
+    width: 200px;
     background-color: white;
     flex-direction: column;
     border-radius: 0 20px 20px 0;
@@ -433,6 +435,7 @@ h2
 {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 40px;
 
 }
 
