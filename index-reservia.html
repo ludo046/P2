@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Reservia</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
         <link href="style-reservia.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     </head>
     <body>
         <header>
             <section id="top">
-            <div id="reservia">
                 <img src="images/logo/Reservia@3x.png" id="logo">
-            </div>
             <div id="menu">
-                <ul class="header">
-                    <a href="#hotel"><li class="bleu">Hébergements</li></a>
-                    <a href="#activité"><li class="black">Activités</li></a>
-                    <a href="#"><li class="bleu"><strong>S'inscrire</strong></li></a>
-                </ul>
+                <h4 id="inscrire" ><a href="#"  class="azul"><strong>S'inscrire</strong></a></h4>
+                <div class="top-menu">
+                    <a href="#hotel"><h4 class="bleu" id="li-top">Hébergements</h4></a>
+                    <a href="#activité"><h4 class="black" id="li-top">Activités</h4></a>
+                </div>
             </div>
         </section>
+                <div class="top-menu2">
+                    <a href="#hotel"><h4 class="bleu" id="li-top2">Hébergements</h4></a>
+                    <a href="#activité"><h4 class="black" id="li-top3">Activités</h4></a>
+                </div>
         </header>
 
         <div id="slogan">
-            <h3 class="marge-slogan">Trouvez votre hébergement pour des vacances de rêve</h3>
+            <h3 class="marge-slogan">Trouvez votre hébergement <span class="br">pour des vacances de rêve</span></h3>
             <p class="marge-slogan"><bold>En plein centre ville ou en pleine nature</bold></p>
         </div>
         <section class="marge-total">
         <section class="searchbar">
             <div class="wrap">
                 <div class="search">
-                    <img src="icones/map-marker-alt-solid.svg" class="map-point">
+                    <i class="fas fa-map-marker-alt"></i>
                     <input type="text" class="search" placeholder="Marseille, France">
-                    <button type="submit" class="searchButton">Rechercher</button>
+                    <button type="submit" class="searchButton"><span class="rechercher">Rechercher</span><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </section>
@@ -41,10 +44,10 @@
             <div class="tri">
                 <h3 id="filtre">Filtres</h3>
                 <ul class="filtre">
-                    <li><a href="#" class="a-li"><p class="list"><span class="icon"><i class="fas fa-money-bill-wave blue"></i></span>Economique</p></a></li>
-                    <li><a href="#" class="a-li"><p class="list"><span class="icon"><i id="child"class="fas fa-child blue fa-lg"></i></span>Familial</p></a></li>
-                    <li><a href="#" class="a-li"><p class="list"><span class="icon"><i class="fas fa-heart blue fa-lg"></i></span>Romantique</p></a></li>
-                    <li><a href="#" class="a-li"><p class="list"><span class="icon"><i class="fas fa-dog blue fa-lg"></i></span>Animaux autorisés</p></a></li>
+                    <li class="li"><a href="#" class="a-li"><p class="list"><span class="icon"><i class="fas fa-money-bill-wave blue"></i></span>Economique</p></a></li>
+                    <li class="li"><a href="#" class="a-li"><p class="list"><span class="icon"><i id="child"class="fas fa-child blue fa-lg"></i></span>Familial</p></a></li>
+                    <li class="li"><a href="#" class="a-li"><p class="list"><span class="icon"><i class="fas fa-heart blue fa-lg"></i></span>Romantique</p></a></li>
+                    <li class="li"><a href="#" class="a-li"><p class="list"><span class="icon"><i class="fas fa-dog blue fa-lg"></i></span>Animaux autorisés</p></a></li>
                 </ul>
             </div>
             <div class="flex-info">
