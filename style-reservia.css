@@ -196,6 +196,7 @@ ul
     display: flex;
     border: 1px solid #F2F2F2;
     border-left: none;
+    border-right: none;
     height: 50px;
     font-family: raleway, serif, sans-serif;
     font-weight: bold;
@@ -506,6 +507,7 @@ h2
 {
     display: flex;
     justify-content: space-around;
+    margin: 0
 }
 
 .toutes
@@ -789,5 +791,210 @@ h2
         display:  flex; 
         flex-direction: column;
     }
+
+}
+
+@media screen and (max-width: 769px)
+{
+    /* général */
+    .bleu:hover
+    {
+        border-top: 0px solid #0065FC;
+        color: #0065FC;
+    }
+
+    .black:hover
+    {
+        border-top: 0px solid white;
+    }
+
+    /* menu */
+    #menu
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .br
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #inscrire
+    {
+        display: flex;
+        margin: 40px 0 0 500px;
+    }
+    #li-top2
+    {
+        padding: 20px 125px 10px 125px;
+        margin: 0;
+    }
+    #li-top3
+    {
+        padding: 20px 155px 10px 155px;
+        margin: 0;
+    }
+    .header
+    {
+        width: 100%
+    }
+    .top-menu
+    {
+        display: none;
+    }
+    .top-menu2
+    {
+        display: flex;
+    }
+    .logo
+    {
+        height: 50px;
+    }
+    .bleu
+    {
+        border-bottom: 3px solid;
+    }
+    .black
+    {
+        border-bottom: 3px solid rgb(217,217,217);
+    }
+    /* boutton rechercher */
+    
+    .rechercher
+    {
+        display: none;
+    }
+    .fa-search
+    {
+        display:inline-block;
+        padding: 15px;
+    }
+    .search
+    {
+        width: 250px;
+    }
+    .searchButton
+    {
+        border-radius: 15px;
+    }
+    .fa-map-marker-alt
+    {
+        padding-right: 15px;
+    }
+    
+    /* filtre */
+    #filtre
+    {
+        margin: 30px 0 10px 30px;
+    }
+    .tri
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .li
+    {
+        margin: 5px 2px 5px 20px;
+    }
+    #slogan
+    {
+        margin-top: 30px;
+    }
+    /* hotels */
+    #hotel
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cadre
+    {
+        display: flex;
+        flex-direction: column, center;
+    }
+    .hebergement 
+    {
+        width: 100%;
+        background-color: white;
+        padding: 0px;
+        margin: 0;
+    }
+    .populaire
+    {
+        width: 100%;
+    }
+    h2
+    {
+        margin-left: 10px;
+    }
+    .overlay-pop
+    {
+        width: 200px;
+    }
+    .photo
+    {
+        width: 320px;
+    }
+    .overlay
+    {
+        width: 320px
+    }
+    .afficher
+    {
+        margin: 0 5px;
+    }
+    
+    /* activités */
+    .toutes
+    {
+        display: flex;
+        flex-direction: column, center;
+    }
+    .grande
+    {
+        margin: 0;
+        width: 320px;
+        height: 115px
+    }
+    .petite
+    {
+        width: 320px;
+        height: 115px;
+    }
+    .iles
+    {
+        width: 320px;
+        height: 115px;
+    }
+    .petite-droite
+    {
+        width: 320px;
+        height: 115px;
+    }
+    .overlay-act
+    {
+        margin-bottom: 20px;
+        width: 320px
+    }
+    .gauche
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .droite
+    {
+        display:  flex; 
+        flex-direction: column;
+    }
+    
+    /* footer */
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 
 }
