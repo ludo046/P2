@@ -25,8 +25,7 @@ h2{
 h2,h3,h4,h5,#slogan,.p1,.tri,.hebergement,.populaire,.overlay-act,.footer{
     font-family: raleway,serif,sans-serif;
 }
-
-.gris{
+.grey{
     color: #F2F2F2;
 }
 
@@ -52,10 +51,15 @@ ul{
     list-style: none;
     display: flex;
 }
-.li,#li-top,#li-top2,#li-top3,#inscrire{
+.li,#li-top,#li-top2,#li-top3{
     margin: 25px 10px;
     font-family: raleway, serif, sans-serif;
     font-weight: 400;
+}
+#inscrire{
+    font-family: raleway, serif, sans-serif;
+    font-weight: 400;
+    margin: 25px;
 }
 .marge-slogan{
     margin: 10px 20px
@@ -313,7 +317,7 @@ h2{
     height: 150px;
 }
 .iles{
-    height: 120px;
+    height: 130px;
 }
 .droite{
     display: flex;
@@ -332,7 +336,7 @@ h2{
     background-color: white;
     border-radius: 0 0 20px 20px;
     height: 50px;
-    box-shadow: 0 5px 5px 5px #F2F2F2;
+    box-shadow: 0 5px 5px 5px rgba(172,172,172,0.1);
 }
 .marge-act{
     margin: 15px 0 0 5px
@@ -363,10 +367,10 @@ h2{
     margin: 0;
 }
 .marge-footer{
-    margin: 20px;
+    margin: 20px 20px 20px 50px;
 }
 .z{
-    margin: 10px 0 0 25px; 
+    margin: 10px 0 0 50px; 
 }
 @media screen and (max-width: 1023px) and (min-width: 768px)
 {
@@ -382,7 +386,7 @@ h2{
 
     /* menu */
     #menu{
-        width: 100%;
+        width: 90%;
     }
     .br,.menu{
         display: flex;
@@ -390,7 +394,7 @@ h2{
     }
     #inscrire{
         display: flex;
-        margin: 40px 0 0 25vw;
+        margin: 40px 20px 0 0vw;
     }
     #li-top2{
         padding: 2vw 16.5vw 1vw 16.5vw;
@@ -524,7 +528,8 @@ h2{
 
     /* menu */
     #menu{
-        width: 100%;
+        width: 70%;
+        margin-right: 20px
     }
     .br,.menu{
         display: flex;
@@ -532,7 +537,7 @@ h2{
     }
     #inscrire{
         display: flex;
-        margin: 40px 0 0 25vw;
+        margin: 40px 10px 0 0;
     }
     #li-top2{
         padding: 2vw 10.5vw 1vw 10.5vw;
@@ -634,151 +639,11 @@ h2{
     }
     .grande{
         margin: 0;
-    }
-    .grand,.petite,.iles,.petite-droite{
         width: 320px;
-        height: 115px;
+        height: 140px;
+        object-position:center;
     }
-    .overlay-act{
-        margin-bottom: 20px;
-        width: 320px
-    }
-    .gauche,.droite{
-        display: flex;
-        flex-direction: column;
-    }
-    /* footer */
-    .footer{
-        display: block;
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 767px) and (min-width: 320px)
-{
-    /* général */
-    .bleu:hover{
-        border-top: 0px solid #0065FC;
-        color: #0065FC;
-    }
-
-    .black:hover{
-        border-top: 0px solid white;
-    }
-
-    /* menu */
-    #menu{
-        width: 100%;
-    }
-    .br,.menu{
-        display: flex;
-        flex-direction: column;
-    }
-    #inscrire{
-        display: flex;
-        margin: 40px 0 0 25vw;
-    }
-    #li-top2{
-        padding: 2vw 10.5vw 1vw 10.5vw;
-        margin: 0;
-    }
-    #li-top3{
-        padding: 2vw 15vw 1vw 15vw;
-        margin: 0;
-    }
-    .header{
-        width: 100%
-    }
-    .top-menu{
-        display: none;
-    }
-    .top-menu2{
-        display: flex;
-    }
-    .logo{
-        height: 50px;
-    }
-    .bleu{
-        border-bottom: 3px solid;
-    }
-    .black{
-        border-bottom: 3px solid rgb(217,217,217);
-    }
-    /* boutton rechercher */
-    
-    .rechercher{
-        display: none;
-    }
-    .fa-search{
-        display:inline-block;
-        padding: 15px;
-    }
-    .search{
-        width: 250px;
-    }
-    .searchButton{
-        border-radius: 15px;
-    }
-    .fa-map-marker-alt{
-        padding-right: 15px;
-    }
-    /* filtre */
-    #filtre{
-        margin: 30px 0 10px 30px;
-    }
-    .tri{
-        display: flex;
-        flex-direction: column;
-    }
-    .li{
-        margin: 5px 2px 5px 20px;
-    }
-    #slogan{
-        margin-top: 30px;
-    }
-    /* hotels */
-    #hotel{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .cadre{
-        display: flex;
-        flex-direction: column, center;
-    }
-    .hebergement {
-        background-color: white;
-        padding: 0px;
-        margin: 0;
-        width: 100%;
-        justify-content: center;
-    }
-    .populaire{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .cadre-pop{
-    margin: 0 15px;
-    }
-    h2{
-        margin-left: 10px;
-    }
-    .overlay-pop{
-        width: 200px;
-    }
-    .photo,.overlay{
-        width: 320px;
-    }
-    .afficher{
-        margin: 0 5px;
-    }
-    /* activités */
-    .toutes{
-        display: flex;
-        flex-direction: column, center;
-    }
-    .grande{
-        margin: 0;
-    }
-    .grand,.petite,.iles,.petite-droite{
+    .grande,.petite,.iles,.petite-droite{
         width: 320px;
         height: 115px;
     }
