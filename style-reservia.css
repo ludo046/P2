@@ -22,14 +22,14 @@ header{
 h2{
     margin-top: 50px;
 }
-h2,h3,h4,h5,#slogan,.p1,.tri,.hebergement,.populaire,.overlay-act,.footer{
+h2,h3,h4,h5,#slogan,.p1,.sorting,.accommodation,.popular,.overlay-act,.footer{
     font-family: raleway,serif,sans-serif;
 }
 .grey{
     color: #F2F2F2;
 }
 
-.marge-total{
+.total-margin{
     width: 97%;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ h2,h3,h4,h5,#slogan,.p1,.tri,.hebergement,.populaire,.overlay-act,.footer{
 
 /* HEADER */
 
-.blue,.bleu,.azul{
+.blue,.housing,.top-blue{
     color: #0065FC;
 }
 #logo{
@@ -51,17 +51,17 @@ ul{
     list-style: none;
     display: flex;
 }
-.li,#li-top,#li-top2,#li-top3{
+.li,.li-top,#li-top2,#li-top3{
     margin: 25px 10px;
     font-family: raleway, serif, sans-serif;
     font-weight: 400;
 }
-#inscrire{
+#register{
     font-family: raleway, serif, sans-serif;
     font-weight: 400;
     margin: 25px;
 }
-.marge-slogan{
+.margin-slogan{
     margin: 10px 20px
 }
 #menu{
@@ -137,15 +137,15 @@ ul{
 }
 /* FILTRE */
 
-.filtre{
+.filter{
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
-#filtre{
+#filter{
     margin: 50px 15px 20px 25px;
 }
-.flex-info,.filtre{
+.flex-info,.filter{
     display: flex;
 }
 .icon{
@@ -155,6 +155,7 @@ ul{
     margin-right: 10px;
     background-color: #DEEBFF;
 }
+
 .info{
     padding: 1px 8px;
     margin-right: 10px;
@@ -169,7 +170,12 @@ ul{
     border-radius: 50px;
     margin: 0px;
 }
-#menu-filtre{
+.list:hover{
+    border-top: 2px solid #0065FC;
+    border-right: 2px solid #0065FC;
+    border-bottom: 2px solid #0065FC;
+}
+#menu-filter{
     display: flex;
     flex-direction: column;
 }
@@ -179,12 +185,13 @@ ul{
     display: flex;
     margin: 20px 0 50px 20px;
 }
-.tri{
+.sorting{
     display: flex;
     min-height: 90px;
     font-weight: bold;
     color: black;
 }
+
 /* HEBERGEMENT */
 
 #hotel{
@@ -193,27 +200,30 @@ ul{
     flex-wrap: wrap;
     margin: 0;
 }
-.hebergement{
+.accommodation{
     width: 880px;
     flex-wrap: wrap;
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
-.populaire{
+.popular{
     width: 440px;
 }
-.populaire,.hebergement{
+.popular,.accommodation{
     background-color: #F2F2F2;
     border-radius: 20px;  
 }
-h2{
-    margin: 50px 0 20px 50px;
+.margin-activity{
+    margin: 50px 0 20px 100px;
 }
-.graph{
+.margin-accommodation{
+    margin: 50px 0 20px 40px;
+}
+.graphic{
     display: flex;
     justify-content: space-around;
 }
-#graph{
+#graphic{
     margin-top: 60px;
 }
 .photo{
@@ -224,15 +234,15 @@ h2{
     border: 5px solid white;
     border-radius: 20px 20px 0 0;
 }
-.cadre{
+.frame{
     justify-content: space-around;
     margin: 0 20px;
     width: auto
 }
-.cadre-pop{
+.frame-pop{
     margin: 0 40px;
 }
-.cadre,.cadre-pop{
+.frame,.frame-pop{
     display: flex;
     flex-wrap: wrap
 }
@@ -252,10 +262,10 @@ h2{
 .photo, .overlay{
     margin: 0; 
 }
-.marge{
+.margin{
     margin-bottom: 30px;
 }
-.marge-h2{
+.margin-h2{
     margin: 50px 0 20px 0;
 }
 .photo-pop{
@@ -274,11 +284,11 @@ h2{
     justify-content: space-between;
     box-shadow: 0 5px 5px 5px rgba(172,172,172,0.1);
 }
-.marge-pop{
+.margin-popular{
     display: flex;
     margin: 0 auto 40px;
 }
-.afficher{
+.pin-up{
     margin: 20px 0 0 40px;
 }
 .margin-pop{
@@ -287,44 +297,43 @@ h2{
 .star{
     margin-left: 15px;
 }
-.star-marge
-{
+.star-margin{
     margin: 40px 0 10px 0;
 }
 /* ACTIVITES */
-#activite{
+#activity{
     margin-bottom: 50px;
 }
-.gauche{
+.left{
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
 }
-.petite,.grande,.petite-droite,.iles{
+.small,.big,.small-right,.island{
     width: 300px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-.grande{
+.big{
     height: 390px;
     margin-right: 40px;
 }
-.petite{
+.small{
     height: 170px;
     display: flex;
 }
-.petite-droite{
+.small-right{
     height: 150px;
 }
-.iles{
+.island{
     height: 130px;
 }
-.droite{
+.right{
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
 }
-.toutes{
+.all{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 0px 0 0px;
@@ -338,21 +347,21 @@ h2{
     height: 50px;
     box-shadow: 0 5px 5px 5px rgba(172,172,172,0.1);
 }
-.marge-act{
+.margin-act{
     margin: 15px 0 0 5px
 }
-.deux{
+.two{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     flex-wrap: wrap;
 }
 /* FOOTER */
-.a-propos,.assistance.nos-hebergement{
+.about,.assistance,.our-accommodation{
     display: flex;
     flex-direction: column;
 }
-.a-propos,.nos-hebergement{
+.about,.our-accommodation{
     margin-right: 220px;
 }
 .footer{
@@ -366,16 +375,16 @@ h2{
     padding: 0;
     margin: 0;
 }
-.marge-footer{
-    margin: 20px 20px 20px 50px;
+.margin-footer{
+    margin: 20px 20px 20px 100px;
 }
-.z{
-    margin: 10px 0 0 50px; 
+.margin-list{
+    margin: 10px 0 0 100px; 
 }
 @media screen and (max-width: 1023px) and (min-width: 768px)
 {
     /* général */
-    .bleu:hover{
+    .housing:hover{
         border-top: 0px solid #0065FC;
         color: #0065FC;
     }
@@ -392,7 +401,7 @@ h2{
         display: flex;
         flex-direction: column;
     }
-    #inscrire{
+    #register{
         display: flex;
         margin: 40px 20px 0 0vw;
     }
@@ -416,7 +425,7 @@ h2{
     .logo{
         height: 50px;
     }
-    .bleu{
+    .housing{
         border-bottom: 3px solid;
     }
     .black{
@@ -424,7 +433,7 @@ h2{
     }
     /* boutton rechercher */
     
-    .rechercher{
+    .searching{
         display: none;
     }
     .fa-search{
@@ -444,7 +453,7 @@ h2{
     #filtre{
         margin: 30px 0 10px 30px;
     }
-    .tri{
+    .sorting{
         display: flex;
         flex-direction: column;
     }
@@ -459,20 +468,18 @@ h2{
         display: flex;
         flex-direction: column-reverse;
     }
-    .cadre{
+    .frame{
         display: flex;
         flex-direction: column, center;
     }
-    .hebergement {
+    .accommodation{
         background-color: white;
         padding: 0px;
         margin: 0;
-    }
-    .hebergement{
         width: 100%;
         justify-content: center;
     }
-    .populaire{
+    .popular{
         width: 55%;
         margin: 0 auto;
     }
@@ -485,18 +492,18 @@ h2{
     .photo,.overlay{
         width: 320px;
     }
-    .afficher{
+    .pin-up{
         margin: 0 5px;
     }
     /* activités */
-    .toutes{
+    .all{
         display: flex;
         flex-direction: column, center;
     }
-    .grande{
+    .big{
         margin: 0;
     }
-    .grand,.petite,.iles,.petite-droite{
+    .big,.little,.island,.small-right{
         width: 320px;
         height: 115px;
     }
@@ -504,7 +511,7 @@ h2{
         margin-bottom: 20px;
         width: 320px
     }
-    .gauche,.droite{
+    .left,.right{
         display: flex;
         flex-direction: column;
     }
@@ -517,7 +524,7 @@ h2{
 @media screen and (max-width: 767px) and (min-width: 320px)
 {
     /* général */
-    .bleu:hover{
+    .housing:hover{
         border-top: 0px solid #0065FC;
         color: #0065FC;
     }
@@ -535,7 +542,7 @@ h2{
         display: flex;
         flex-direction: column;
     }
-    #inscrire{
+    #register{
         display: flex;
         margin: 40px 10px 0 0;
     }
@@ -559,15 +566,15 @@ h2{
     .logo{
         height: 50px;
     }
-    .bleu{
-        border-bottom: 3px solid;
+    .housing{
+        border-bottom: 3px solid #0065FC;
     }
     .black{
         border-bottom: 3px solid rgb(217,217,217);
     }
     /* boutton rechercher */
     
-    .rechercher{
+    .searching{
         display: none;
     }
     .fa-search{
@@ -584,10 +591,10 @@ h2{
         padding-right: 15px;
     }
     /* filtre */
-    #filtre{
+    #filter{
         margin: 30px 0 10px 30px;
     }
-    .tri{
+    .sorting{
         display: flex;
         flex-direction: column;
     }
@@ -598,26 +605,29 @@ h2{
         margin-top: 30px;
     }
     /* hotels */
+    .margin-accommodation{
+        margin-left: 30px;
+    }
     #hotel{
         display: flex;
         flex-direction: column-reverse;
     }
-    .cadre{
+    .frame{
         display: flex;
         flex-direction: column, center;
     }
-    .hebergement {
+    .accommodation{
         background-color: white;
         padding: 0px;
         margin: 0;
         width: 100%;
         justify-content: center;
     }
-    .populaire{
+    .popular{
         width: 100%;
         margin: 0 auto;
     }
-    .cadre-pop{
+    .frame-pop{
     margin: 0 15px;
     }
     h2{
@@ -629,21 +639,24 @@ h2{
     .photo,.overlay{
         width: 320px;
     }
-    .afficher{
+    .pin-up{
         margin: 0 5px;
     }
     /* activités */
-    .toutes{
+    .margin-activity{
+        margin-left: 20px;
+    }
+    .all{
         display: flex;
         flex-direction: column, center;
     }
-    .grande{
+    .big{
         margin: 0;
         width: 320px;
         height: 140px;
         object-position:center;
     }
-    .grande,.petite,.iles,.petite-droite{
+    .big,.small,.island,.small-right{
         width: 320px;
         height: 115px;
     }
@@ -651,7 +664,7 @@ h2{
         margin-bottom: 20px;
         width: 320px
     }
-    .gauche,.droite{
+    .left,.right{
         display: flex;
         flex-direction: column;
     }
