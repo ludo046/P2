@@ -673,4 +673,10 @@ ul{
         display: block;
         flex-direction: column;
     }
+    .margin-list{
+        margin: 10px 0 0 30px;
+    }
+    .margin-footer{
+        margin: 30px 20px 5px 25px
+    }
 }
