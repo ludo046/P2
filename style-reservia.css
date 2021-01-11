@@ -10,6 +10,7 @@ a{
 body {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 footer, body{
     margin: 0;
@@ -24,6 +25,9 @@ h2{
 }
 h2,h3,h4,h5,#slogan,.p1,.sorting,.accommodation,.popular,.overlay-act,.footer{
     font-family: raleway,serif,sans-serif;
+}
+h4{
+    padding-top: 10px;
 }
 .grey{
     color: #F2F2F2;
@@ -62,7 +66,7 @@ ul{
     margin: 25px;
 }
 .margin-slogan{
-    margin: 10px 20px
+    margin: 10px 50px
 }
 #menu{
     display: flex;
@@ -81,14 +85,30 @@ ul{
 #slogan h3{
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 .bleu:hover{
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
+.black{
+    border-top: 2px solid white;
+    
+}
 .black:hover{
     border-top: 2px solid grey;
+}
+.housing{
+    border-top: 2px solid white;
+}
+.housing:hover{
+    border-top: 2px solid #0065FC;
+}
+#register{
+    border-top: 2px solid white;
+}
+#register:hover{
+    border-top: 2px solid #0065FC;
 }
 /* SEARCH BAR */
 .fa-search{
@@ -98,7 +118,6 @@ ul{
     width: 15px;
     padding: 15px 20px 15px 20px;
     background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
 ::placeholder{
@@ -149,9 +168,8 @@ ul{
     display: flex;
 }
 .icon{
-    border: 2px solid  #DEEBFF;
     border-radius: 100%;
-    padding: 13px;
+    padding: 15px;
     margin-right: 10px;
     background-color: #DEEBFF;
 }
@@ -201,13 +219,13 @@ ul{
     margin: 0;
 }
 .accommodation{
-    width: 880px;
+    width: 60%;
     flex-wrap: wrap;
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
 .popular{
-    width: 440px;
+    width: 27%;
 }
 .popular,.accommodation{
     background-color: #F2F2F2;
@@ -240,7 +258,7 @@ ul{
     width: auto
 }
 .frame-pop{
-    margin: 0 40px;
+    margin: 0 10px;
 }
 .frame,.frame-pop{
     display: flex;
@@ -263,7 +281,7 @@ ul{
     margin: 0; 
 }
 .margin{
-    margin-bottom: 30px;
+    margin: 2px 3px 20px 3px;
 }
 .margin-h2{
     margin: 50px 0 20px 0;
@@ -274,10 +292,10 @@ ul{
     object-fit: cover;
     border: 5px solid white;
     border-radius: 20px 0 0 20px;
-    margin: 0;
+    margin: 0 0 0 15px;
 }
 .overlay-pop{
-    width: 13.5vw;
+    width: 14.0vw;
     background-color: white;
     flex-direction: column;
     border-radius: 0 20px 20px 0;
@@ -287,6 +305,8 @@ ul{
 .margin-popular{
     display: flex;
     margin: 0 auto 40px;
+    width: 100%;
+    justify-content: center;
 }
 .pin-up{
     margin: 20px 0 0 40px;
@@ -306,8 +326,8 @@ ul{
 }
 .left{
     display: flex;
-    justify-content: space-around;
     margin-bottom: 40px;
+    margin-right: 50px;
 }
 .small,.big,.small-right,.island{
     width: 300px;
@@ -330,14 +350,13 @@ ul{
 }
 .right{
     display: flex;
-    justify-content: space-around;
     margin-bottom: 40px;
 }
 .all{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 0px 0 0px;
-    justify-content: space-around;
+    justify-content: center;
 }
 .overlay-act{
     display: flex;
@@ -381,6 +400,20 @@ ul{
 .margin-list{
     margin: 10px 0 0 100px; 
 }
+@media screen and (max-width: 1925px) and (min-width: 1500px){
+    .margin{
+        margin: 2px 5px 20px 5px;
+    }
+    .photo-pop{
+        margin-left: 40px;
+    }
+    .left{
+        margin-right: 120px;
+    }
+    .big{
+        margin-right: 120px;
+    }
+}
 @media screen and (max-width: 1023px) and (min-width: 768px)
 {
     /* général */
@@ -405,11 +438,11 @@ ul{
         display: flex;
         margin: 40px 20px 0 0vw;
     }
-    #li-top2{
+    .li-top2{
         padding: 2vw 16.5vw 1vw 16.5vw;
         margin: 0;
     }
-    #li-top3{
+    .li-top3{
         padding: 2vw 20vw 1vw 20vw;
         margin: 0;
     }
@@ -425,12 +458,13 @@ ul{
     .logo{
         height: 50px;
     }
-    .housing{
+    .housing,.top-blue{
         border-bottom: 3px solid;
     }
     .black{
         border-bottom: 3px solid rgb(217,217,217);
     }
+
     /* boutton rechercher */
     
     .searching{
@@ -470,7 +504,7 @@ ul{
     }
     .frame{
         display: flex;
-        flex-direction: column, center;
+        flex-direction: column;
     }
     .accommodation{
         background-color: white;
@@ -498,7 +532,7 @@ ul{
     /* activités */
     .all{
         display: flex;
-        flex-direction: column, center;
+        flex-direction: column;
     }
     .big{
         margin: 0;
@@ -536,7 +570,13 @@ ul{
     /* menu */
     #menu{
         width: 70%;
-        margin-right: 20px
+        height: 100px;
+    }
+    .register{
+        height: 20px;
+    }
+    .top-menu{
+        height: 30px;
     }
     .br,.menu{
         display: flex;
@@ -544,24 +584,26 @@ ul{
     }
     #register{
         display: flex;
-        margin: 40px 10px 0 0;
+        margin: 30px 10px 0 0;
+        position: absolute;
+        right: 0rem;
     }
-    #li-top2{
-        padding: 2vw 10.5vw 1vw 10.5vw;
+    .li-top2{
         margin: 0;
+        padding: 0 40px 0 40px;
+        position: relative;
+        top: 5.5rem;
+        right: 0.2rem;
     }
-    #li-top3{
-        padding: 2vw 15vw 1vw 15vw;
+    .li-top3{
         margin: 0;
+        padding: 0 60px 0 60px;
+        position: relative;
+        top: 5.5rem;
+        right: 0.2rem;
     }
     .header{
         width: 100%
-    }
-    .top-menu{
-        display: none;
-    }
-    .top-menu2{
-        display: flex;
     }
     .logo{
         height: 50px;
@@ -614,7 +656,7 @@ ul{
     }
     .frame{
         display: flex;
-        flex-direction: column, center;
+        flex-direction: column;
     }
     .accommodation{
         background-color: white;
@@ -628,7 +670,7 @@ ul{
         margin: 0 auto;
     }
     .frame-pop{
-    margin: 0 15px;
+    margin: 0 1px;
     }
     h2{
         margin-left: 10px;
@@ -648,7 +690,8 @@ ul{
     }
     .all{
         display: flex;
-        flex-direction: column, center;
+        flex-direction: column;
+        margin-left: 25px;
     }
     .big{
         margin: 0;
@@ -667,6 +710,9 @@ ul{
     .left,.right{
         display: flex;
         flex-direction: column;
+    }
+    .left{
+        margin-right: 0;
     }
     /* footer */
     .footer{
