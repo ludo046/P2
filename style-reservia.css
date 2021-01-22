@@ -430,31 +430,7 @@ ul{
     #menu{
         width: 90%;
     }
-    .br,.menu{
-        display: flex;
-        flex-direction: column;
-    }
-    #register{
-        display: flex;
-        margin: 40px 20px 0 0vw;
-    }
-    .li-top2{
-        padding: 2vw 16.5vw 1vw 16.5vw;
-        margin: 0;
-    }
-    .li-top3{
-        padding: 2vw 20vw 1vw 20vw;
-        margin: 0;
-    }
-    .header{
-        width: 100%
-    }
-    .top-menu{
-        display: none;
-    }
-    .top-menu2{
-        display: flex;
-    }
+   
     .logo{
         height: 50px;
     }
@@ -505,6 +481,8 @@ ul{
     .frame{
         display: flex;
         flex-direction: column;
+        width: 45%;
+        margin: 0 auto;
     }
     .accommodation{
         background-color: white;
@@ -527,12 +505,14 @@ ul{
         width: 320px;
     }
     .pin-up{
-        margin: 0 5px;
+        margin: 0 auto;
     }
     /* activités */
     .all{
         display: flex;
         flex-direction: column;
+        width: 50%;
+        margin: 2rem auto;
     }
     .big{
         margin: 0;
